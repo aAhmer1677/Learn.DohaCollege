@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hall of Fame at DC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Assets/Logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="Assets/Logo.png" alt="Doha College Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="Hall_of_Fame.html" class="active">Hall of Fame</a></li>
+      <li><a href="Assesment_Calendar.html">Assessment Calendar</a></li>
+      <li><a href="transitions.html">Transitions</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<header class="hero subject-hero">
+  <h1>Hall of Fame at Doha College</h1>
+  <p>Explore Doha College's Leading students, updated monthly.</p>
+</header>
+
+<main class="main-content">
+  <section class="subject-library">
+    <h1 class="section-title" style="text-align: center;">The Hall of Fame</h1>
+    <p style="text-align: center;">Click each subject to see the award-winning student</p>
+    <div class="subject-grid">
+      <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+        <img src="Assets/Subjects/Arabic.jpeg"><span>Arabic</span>
+      </div>
+      <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+        <img src="Assets/Subjects/Art.jpeg"><span>Art</span>
+      </div>
+      <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+        <img src="Assets/Subjects/CS.jpeg"><span>Computer Science</span>
+      </div>
+      <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+        <img src="Assets/Subjects/DT.jpeg"><span>Design & Technology</span>
+      </div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+          <img src="Assets/Subjects/E&B.jpeg"><span>Economics & Business</span>
+        </div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+          <img src="Assets/Subjects/English.jpeg"><span>English Literature</span>
+        </div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')">
+          <img src="Assets/Subjects/French.jpeg"><span>French</span>
+        </div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Geography.jpeg"><span>Geography</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/History.jpeg"><span>History</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Islamic.jpeg"><span>Islamic</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Maths.jpeg"><span>Mathematics</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Media.jpeg"><span>Media</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Music.jpeg"><span>Music</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/PE.jpeg"><span>PE</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Psycology.jpeg"><span>Psychology</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/QH.jpeg"><span>Qatar History</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Sciences.jpeg"><span>Science</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Sociology.png"><span>Sociology</span></div>
+        <div class="subject-card" onclick="openModal('Cool Dude', 'Year 50', '20 June 2025', 'Assets/HallOfFame/CoolDude.jpeg')"><img src="Assets/Subjects/Spanish.png"><span>Spanish</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img src="" class="modal-image" id="modal-image" alt="Student">
+    <div class="modal-text">
+      <h2 id="student-name"></h2>
+      <p><strong>Year Group:</strong> <span id="student-year"></span></p>
+      <p><strong>Date:</strong> <span id="student-date"></span></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function openModal(name, year, date, photo) {
+    document.getElementById('student-name').textContent = name;
+    document.getElementById('student-year').textContent = year;
+    document.getElementById('student-date').textContent = date;
+    document.getElementById('modal-image').src = photo;
+    document.getElementById('modal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
